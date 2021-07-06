@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <title>Color Renderer</title>
+  <meta name="theme-color" content="#000000" />
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+
+  <meta property="og:title" content="Color Render" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Full screen color previews" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=JetBrains+Mono">
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+
+<body>
+  <table id="root">
+    <tr>
+      <td>
+        <div id="color-info-container">
+          <span id="color-info-display"></span>
+          <span id="color-info-copy" class="material-icons">content_copy</span>
+        </div>
+        <input type="text" id="color-input" placeholder="Input a color value..." />
+      </td>
+    </tr>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/8.1.0/cash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.2/tinycolor.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script src="scripts/copy.js"></script>
+  <script src="scripts/util.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

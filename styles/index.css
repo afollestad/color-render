@@ -1,0 +1,72 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    transition: background-color 1s ease;
+}
+
+input, span, p, td, .tippy-content {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+#color-info-container {
+    margin-bottom: 1%;
+    color: white;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+#color-info-container #color-info-display {
+    display: inline;
+}
+
+#color-info-container #color-info-copy:hover {
+    cursor: copy;
+}
+
+#color-input {
+    width: 33%;
+    height: auto;
+    margin: auto;
+    border: 1px solid #eee;
+    font-size: 1.6rem;
+    border-radius: 0.8em;
+    padding: 0.5em;
+    transition: background-color 0.7s ease;
+}
+
+#color-input:focus {
+    outline: none;
+    border: 1px solid #006AFF;
+    transition: border 1s ease;
+}
+
+td {
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    #color-input {
+        width: 90%;
+    }
+}
+
+@media (min-width: 800px) {
+    #color-input {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #color-input {
+        width: 70%;
+    }
+}
